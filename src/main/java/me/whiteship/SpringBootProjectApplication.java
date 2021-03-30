@@ -1,15 +1,7 @@
 package me.whiteship;
 
-import com.example.springbootstarter.Holoman;
-import javafx.application.Application;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.SpringBootConfiguration;
-import org.springframework.boot.WebApplicationType;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
 /*
  @SpringBootApplication은 크게 3가지가 합쳐진 것이라고 생각할 수 있다.
@@ -37,6 +29,22 @@ public class SpringBootProjectApplication {
 //        application.run(args);
 
         SpringApplication.run(SpringBootProjectApplication.class, args);
+
+//        Tomcat tomcat = new Tomcat();
+//        tomcat.setPort(8080);
+//
+//        tomcat.addContext("/", "/");
+//
+//        HttpServlet servlet = new HttpServlet() {
+//            @Override
+//            protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//                PrintWriter writer = new resp.getWriter();
+//                writer.println("<html><head><title >");
+//            }
+//        };
+//
+//        tomcat.start();
+//        tomcat.getServer().await();
     }
 
     //A bean with that name has already been defined in me.whiteship.SpringBootProjectApplication and overriding is disabled.
